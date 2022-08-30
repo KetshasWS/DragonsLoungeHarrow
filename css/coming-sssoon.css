@@ -738,6 +738,8 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 .main .logo.cursive{
     font-family: 'Grand Hotel',cursive;
     font-size: 82px;
+    width="250px;"
+    height="250px;"
     
 }
 .main .content{
@@ -931,6 +933,46 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     }
     #video_background{
         display: none;
+    }
+
+}
+
+@media :-webkit-full-screen (max-width:219px) {
+
+    .main .logo.cursive{ {
+        margin: 100%;
+    }
+
+    .navbar-nav > li {
+        font-size:15%;
+        margin-top: 60px;
+
+    }
+
+    .form-group .btn-submit {
+        padding: 0px;
+        margin 100%;
+
+    }
+
+} /* Try out both media queries and see if works */
+
+@media :-webkit-full-screen (max-width:768px) {
+
+    .main .logo.cursive{ {
+        margin: 100%;
+    }
+
+    .navbar-nav > li {
+        font: size 0.5em;;
+        margin-top: 40px;
+
+    }
+
+    .form-group .btn-submit {
+        padding: 0px;
+        margin 100%;
+
     }
 
 }
