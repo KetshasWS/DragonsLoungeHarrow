@@ -939,20 +939,22 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 
 @media :-webkit-full-screen (max-width:219px) {
 
-    .main .logo.cursive{ {
+    .logo cursive {
         margin: 100%;
+        line-height: 1.5;
     }
 
-    .navbar-nav > li {
-        font-size:15%;
-        margin-top: 60px;
-        padding: 15px;
-
-    }
-
-    .form-group .btn-submit {
+    .navbar-right {
+        font-size: medium;
+        margin-top: 5px;
         padding: 0px;
-        margin 100%;
+
+    }
+
+    /*.form-group .btn-submit */
+    .form-group {
+        padding: 0px;
+        margin-bottom: 5px;
 
     }
 
@@ -960,20 +962,20 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 
 @media :-webkit-full-screen (max-width:768px) {
 
-    .main .logo.cursive{ {
+    .logo cursive {
         margin: 100%;
-        padding: 50px;
+        line-height: 2.0;
     }
 
-    .navbar-nav > li {
-        font: size 0.5em;;
-        margin-top: 40px;
+    .navbar-right {
+        font-size: medium;
+        margin-top: 5px;
         padding: 0px;
     }
 
-    .form-group .btn-submit {
+    .form-group {
         padding: 0px;
-        margin 100%;
+        margin-bottom: 5px;
 
     }
 
@@ -981,20 +983,21 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 
 @media :-webkit-full-screen (max-width:2224px) { /* Apple Ipad 10.5 Pro 2017 */
  
-    .main .logo.cursive{ {
+    /*.main .logo.cursive*/
+    .logo cursive {
         margin: 100%;
-        padding: 50px;
+        line-height: 2.0;
     }
 
-    .navbar-nav > li {
-        font: size 0.5em;;
+    .navbar-right {
+        font-size: medium;
         margin-top: 40px;
         padding: 30px;
     }
 
-    .form-group .btn-submit {
+    .form-group {
         padding: 0px;
-        margin 100%;
+        margin-bottom: 5px;
 
     }
 }
