@@ -946,6 +946,7 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     .navbar-nav > li {
         font-size:15%;
         margin-top: 60px;
+        padding: 15px;
 
     }
 
@@ -955,18 +956,19 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 
     }
 
-} /* Try out both media queries and see if works */
+} 
 
 @media :-webkit-full-screen (max-width:768px) {
 
     .main .logo.cursive{ {
         margin: 100%;
+        padding: 50px;
     }
 
     .navbar-nav > li {
         font: size 0.5em;;
         margin-top: 40px;
-
+        padding: 0px;
     }
 
     .form-group .btn-submit {
@@ -976,3 +978,25 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     }
 
 }
+
+@media :-webkit-full-screen (max-width:2224px) { /* Apple Ipad 10.5 Pro 2017 */
+ 
+    .main .logo.cursive{ {
+        margin: 100%;
+        padding: 50px;
+    }
+
+    .navbar-nav > li {
+        font: size 0.5em;;
+        margin-top: 40px;
+        padding: 30px;
+    }
+
+    .form-group .btn-submit {
+        padding: 0px;
+        margin 100%;
+
+    }
+}
+
+} /* Try out all three media queries and see if works */
