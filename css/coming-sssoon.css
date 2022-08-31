@@ -939,14 +939,13 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 
 @media :-webkit-full-screen (max-width:219px) {
 
-    .logo cursive {
+    .main .logo {
         margin: 100%;
-        line-height: 1.5;
+        line-height: 50%; /*Old Val: 1.5 */
     }
 
     .navbar-right {
-        font-size: medium;
-        margin-top: 5px;
+        margin-top: 4px;
         padding: 0px;
 
     }
@@ -958,18 +957,21 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 
     }
 
+    body {
+        font-size: 2vw; /*Old Val: medium */
+        }
+
 } 
 
 @media :-webkit-full-screen (max-width:768px) {
 
-    .logo cursive {
+    .main .logo {
         margin: 100%;
-        line-height: 2.0;
+        line-height: 75%; /*Old Val: 2.0 */
     }
 
     .navbar-right {
-        font-size: medium;
-        margin-top: 5px;
+        margin-top: 4px;
         padding: 0px;
     }
 
@@ -977,22 +979,29 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
         padding: 0px;
         margin-bottom: 5px;
 
-    }
+    }.
+
+    body {
+        font-size: 5vw; /*Old Val: medium */
+        }
+    
+        .main {
+            background-attachment: fixed;
+        }
 
 }
 
 @media :-webkit-full-screen (max-width:2224px) { /* Apple Ipad 10.5 Pro 2017 */
  
     /*.main .logo.cursive*/
-    .logo cursive {
+    .main .logo {
         margin: 100%;
-        line-height: 2.0;
+        line-height: 75%; /*Old Val: 2.0*/
     }
 
     .navbar-right {
-        font-size: medium;
-        margin-top: 40px;
-        padding: 30px;
+        margin-bottom: 4px;
+        padding: 0px;
     }
 
     .form-group {
@@ -1000,6 +1009,14 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
         margin-bottom: 5px;
 
     }
+
+    body {
+    font-size: 5vw; /*Old Val: medium */
+    }
+
+    .main {
+        background-attachment: fixed;
+    }
 }
 
-} /* Try out all three media queries and see if works */
+} /* Adjust Values For Nedia Query 219, 768, 2224 px*/
