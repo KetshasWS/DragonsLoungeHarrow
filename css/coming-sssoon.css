@@ -937,23 +937,25 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 
 }
 
-@media :-webkit-full-screen (max-width:219px) {
+@media all: -webkit-full-screen (max-width:219px) {
 
     .main .logo {
         margin: 100%;
         line-height: 50%; /*Old Val: 1.5 */
     }
 
-    .navbar-right {
+    /*.navbar-right */
+    .nav > li > a {
         margin-top: 4px;
         padding: 0px;
 
     }
 
-    /*.form-group .btn-submit */
-    .form-group {
+    /*.form-group .btn-submit 
+    .form-group*/ 
+    .form-control.transparent {
         padding: 0px;
-        margin-bottom: 5px;
+        margin-bottom: 5px; 
 
     }
 
@@ -963,19 +965,36 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 
 } 
 
-@media :-webkit-full-screen (max-width:768px) {
+@media all: -webkit-full-screen (max-width:219px) and (orientation: landscape) { /*Mobile Screen Orientation: LS */
+    .main {
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: auto;
+        height: auto;
+        left: 0;
+        max-width: 100%;
+        position: absolute;
+        top: 0;
+        width: auto;
+    }
+
+}
+
+@media all:-webkit-full-screen (max-width:768px) {
 
     .main .logo {
         margin: 100%;
         line-height: 75%; /*Old Val: 2.0 */
     }
 
-    .navbar-right {
+    /*.navbar-right */
+    .nav > li > a {
         margin-top: 4px;
         padding: 0px;
     }
 
-    .form-group {
+    /*.form-group */
+    .form-control.transparent {
         padding: 0px;
         margin-bottom: 5px;
 
@@ -987,24 +1006,36 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     
         .main {
             background-attachment: fixed;
+            background-position: center center;
+            background-size: auto;
+            height: auto;
+            left: 0;
+            max-height: 100%;
+            max-width: 100%;
+            position: absolute;
+            top: 0;
+            width: auto;
         }
 
 }
 
-@media :-webkit-full-screen (max-width:2224px) { /* Apple Ipad 10.5 Pro 2017 */
+@media all: -webkit-full-screen (max-width:2224px) { /* Apple Ipad 10.5 Pro 2017 */
  
     /*.main .logo.cursive*/
     .main .logo {
         margin: 100%;
-        line-height: 75%; /*Old Val: 2.0*/
+        line-height: -35%; /*Old Val: 2.0*/
     }
 
-    .navbar-right {
-        margin-bottom: 4px;
+    /*.navbar-right */
+    .nav > li > a{
+        margin-top: 0px; /* Old Val: 4px */
+        display: none;
         padding: 0px;
     }
 
-    .form-group {
+    /*.form-group */
+    .form-control.transparent{
         padding: 0px;
         margin-bottom: 5px;
 
@@ -1016,7 +1047,67 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 
     .main {
         background-attachment: fixed;
+        background-position: center center;
+        background-size: auto;
+        height: auto;
+        left: 0;
+        max-height: 100%;
+        max-width: 100%;
+        position: absolute;
+        top: 0;
+        width: auto;
     }
+
+
+@media all: -webkit-full-screen (max-width:2224px) and (orientation: landscape){ /* Apple Ipad 10.5 Pro 2017 & Orientation LS */
+
+ /*.navbar-right */
+ .nav > li > a{
+    margin-top: 0px; /* Old Val: 4px */
+    display: none;
+    padding: 0px;
 }
 
-} /* Adjust Values For Nedia Query 219, 768, 2224 px*/
+.main .logo {
+    margin: 100%;
+    line-height: -175px; /*Old Val: 2.0*/
+}
+
+.form-control.transparent{
+    padding: 0px;
+    margin-bottom: 5px;
+
+}
+
+body {
+font-size: 5vw; /*Old Val: medium */
+}
+
+.main {
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: auto;
+    height: auto;
+    left: 0;
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    width: auto;
+}
+
+}
+
+@media all (max-width:3000px){ /* Laptop Screen Only */
+    .form-control.transparent {
+        padding: 0px;
+        margin-right: -5px;
+}
+
+body {
+    overflow:auto;
+}
+
+}
+
+} 
