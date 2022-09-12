@@ -973,7 +973,8 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
         height: auto;
         left: 0;
         max-width: 100%;
-        position: absolute;
+        /*position: absolute; */
+        position: sticky;
         top: 0;
         width: auto;
     }
@@ -987,10 +988,11 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
         line-height: 75%; /*Old Val: 2.0 */
     }
 
-    /*.navbar-right */
+    /*.navbar-right */ 
     .nav > li > a {
         margin-top: 4px;
         padding: 0px;
+        float: left !important;
     }
 
     /*.form-group */
@@ -1012,7 +1014,7 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
             left: 0;
             max-height: 100%;
             max-width: 100%;
-            position: absolute;
+            position: sticky;
             top: 0;
             width: auto;
         }
@@ -1024,14 +1026,18 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     /*.main .logo.cursive*/
     .main .logo {
         margin: 100%;
-        line-height: -35%; /*Old Val: 2.0*/
+        /*line-height:  -35%; Old Val: 2.0*/
+        text-align: -webkit-center;
+        position: sticky;
     }
 
-    /*.navbar-right */
-    .nav > li > a{
+    /*.navbar-right 
+    .nav > li > a*/
+    .navbar-right {
         margin-top: 0px; /* Old Val: 4px */
         display: none;
         padding: 0px;
+        float: left !important;
     }
 
     /*.form-group */
@@ -1053,24 +1059,35 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
         left: 0;
         max-height: 100%;
         max-width: 100%;
-        position: absolute;
+        position: sticky;
         top: 0;
         width: auto;
     }
 
+    *,
+    *:before,
+    *:after {
+      -webkit-box-sizing: unset;
+    }
+
+}
 
 @media all: -webkit-full-screen (max-width:2224px) and (orientation: landscape){ /* Apple Ipad 10.5 Pro 2017 & Orientation LS */
 
- /*.navbar-right */
- .nav > li > a{
+ /*.navbar-right 
+ .nav > li > a{*/
+    .navbar-right {
     margin-top: 0px; /* Old Val: 4px */
     display: none;
     padding: 0px;
+    float: left !important;
 }
 
 .main .logo {
     margin: 100%;
-    line-height: -175px; /*Old Val: 2.0*/
+    /*line-height: -175px; Old Val: 2.0*/
+    text-align: -webkit-center;
+    position: sticky;
 }
 
 .form-control.transparent{
@@ -1091,21 +1108,35 @@ font-size: 5vw; /*Old Val: medium */
     left: 0;
     max-height: 100%;
     max-width: 100%;
-    position: absolute;
+    /*position: absolute; */
+    position:sticky;
     top: 0;
     width: auto;
 }
 
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: unset;
 }
 
-@media all (max-width:3000px){ /* Laptop Screen Only */
-    .form-control.transparent {
+}
+
+@media :-webkit-full-screen (max-width:3000px){ /* Laptop Screen Only */
+    .form-group {
         padding: 0px;
         margin-right: -5px;
+        float: right !important;
 }
 
 body {
-    overflow:auto;
+    
+    overflow:clip;
+} 
+
+*:before,
+*:after {
+  -webkit-box-sizing:border-box;
 }
 
 }
