@@ -13,8 +13,13 @@
  * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
  */
 
-body{
+/*body{
     
+} */
+
+body{
+    overflow-x:hidden;
+    overflow-y:visible;
 }
 .form-control::-moz-placeholder{
    color: #DDDDDD;
@@ -961,6 +966,9 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 
     body {
         font-size: 2vw; /*Old Val: medium */
+        overflow-x: hidden;
+        overflow-y: visible;
+        zoom:1.5%;
         }
 
 } 
@@ -977,6 +985,12 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
         position: sticky;
         top: 0;
         width: auto;
+    }
+
+    body {
+        overflow-x: hidden;
+        overflow-y: visible;
+        zoom:1.2%;
     }
 
 }
@@ -1004,6 +1018,9 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 
     body {
         font-size: 5vw; /*Old Val: medium */
+        overflow-x: hidden;
+        overflow-y: visible;
+        zoom:0.7%;
         }
     
         .main {
@@ -1049,6 +1066,8 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 
     body {
     font-size: 5vw; /*Old Val: medium */
+    overflow-x: hidden;
+    overflow-y: visible;
     }
 
     .main {
@@ -1098,6 +1117,8 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 
 body {
 font-size: 5vw; /*Old Val: medium */
+overflow-x:hidden;
+overflow-y:visible;
 }
 
 .main {
@@ -1127,12 +1148,8 @@ font-size: 5vw; /*Old Val: medium */
         padding: 0px;
         margin-right: -5px;
         float: right !important;
-}
-
-body {
-    
-    overflow:clip;
 } 
+
 
 *:before,
 *:after {
