@@ -17,9 +17,16 @@
     
 } */
 
+/*body{
+    overflow-x:hidden;
+    overflow-y:visible;
+}*/
+
 body{
     overflow-x:hidden;
     overflow-y:visible;
+    margin: auto;
+    padding: 0px;
 }
 .form-control::-moz-placeholder{
    color: #DDDDDD;
@@ -754,6 +761,7 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 .main .motto{
     min-height: 140px;
 }
+
 .main .motto, .main .subscribe .info-text{
     font-size: 28px;
     color: #FFFFFF;
@@ -762,6 +770,7 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     margin-top: 50px;
     
 }
+
 .main .subscribe .info-text{
     font-size: 18px;
     margin-bottom: 30px;
@@ -978,6 +987,7 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
         background-attachment: fixed;
         background-position: center center;
         background-size: auto;
+        display: flex;
         height: auto;
         left: 0;
         max-width: 100%;
@@ -1027,6 +1037,7 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
             background-attachment: fixed;
             background-position: center center;
             background-size: auto;
+            display: flex;
             height: auto;
             left: 0;
             max-height: 100%;
@@ -1034,6 +1045,10 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
             position: sticky;
             top: 0;
             width: auto;
+        }
+
+        .OtherText {
+            width:max-content;
         }
 
 }
@@ -1052,9 +1067,12 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     .nav > li > a*/
     .navbar-right {
         margin-top: 0px; /* Old Val: 4px */
-        display: none;
         padding: 0px;
         float: left !important;
+        position: relative;
+        display: inline-block;
+        width: auto;
+        padding: 10px 15px;
     }
 
     /*.form-group */
@@ -1074,6 +1092,7 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
         background-attachment: fixed;
         background-position: center center;
         background-size: auto;
+        display: flex;
         height: auto;
         left: 0;
         max-height: 100%;
@@ -1089,6 +1108,10 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
       -webkit-box-sizing: unset;
     }
 
+    .OtherText {
+    width:max-content;
+    }
+
 }
 
 @media all: -webkit-full-screen (max-width:2224px) and (orientation: landscape){ /* Apple Ipad 10.5 Pro 2017 & Orientation LS */
@@ -1097,9 +1120,12 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
  .nav > li > a{*/
     .navbar-right {
     margin-top: 0px; /* Old Val: 4px */
-    display: none;
     padding: 0px;
     float: left !important;
+    position: relative;
+    display: inline-block;
+    width: auto;
+    padding: 10px 15px;
 }
 
 .main .logo {
@@ -1125,6 +1151,7 @@ overflow-y:visible;
     background-attachment: fixed;
     background-position: center center;
     background-size: auto;
+    display: flex;
     height: auto;
     left: 0;
     max-height: 100%;
@@ -1140,6 +1167,10 @@ overflow-y:visible;
 *:after {
   -webkit-box-sizing: unset;
 }
+
+.OtherText {
+    width:max-content;
+    }
 
 }
 
